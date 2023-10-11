@@ -16,3 +16,17 @@ const linkAction = ( ) => {
     navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+/* swiper */
+let swiperShoes = new Swiper('.home__swiper', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 32,
+    grabCursor: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+  });
